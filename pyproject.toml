@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dag-project"
+version = "0.1.0"
+description = "A DAG based base Task for Python"
+authors = ["Hareesh Pallathoor Balakrishnan <hareesh.pallathoor@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6.8"
+loguru = "^0.7.0"
+asyncio = "^3.4.3"
+typer = "^0.9.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+DAGTask = 'dag-project.dag'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
